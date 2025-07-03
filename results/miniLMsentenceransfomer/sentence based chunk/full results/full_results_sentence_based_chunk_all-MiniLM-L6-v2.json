@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "chunking_strategy": "sentence_based_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.14119410514831543,
+        "chunk_emissions": 4.151701029589535e-06,
+        "embedding_emissions": 4.7076733765809094e-05,
+        "api_cost": 220.172,
+        "embedding_time": 3.069568395614624,
+        "precision": 0.7,
+        "recall": 0.07142857142857142,
+        "f1_score": 0.12962962962962962,
+        "evaluation_time": 1.2929306030273438,
+        "indexing_time": 1.274015188217163,
+        "query_embedding_time": 0.010185718536376953,
+        "retrieval_time": 1.2741754055023193,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 26.87723135948181,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.003449,
+        "reranked_precision": 0.7,
+        "reranked_recall": 0.5,
+        "reranked_f1_score": 0.5833333333333334,
+        "reranked_eval_time": 1.298616886138916,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 1.149999483746232e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.4,
+                "recall": 0.5,
+                "f1": 0.4444444444444445,
+                "total_cost": 0.0042075,
+                "total_tokens": 2805,
+                "total_time": 3.9102940559387207
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 0.375,
+                "f1": 0.33333333333333326,
+                "total_cost": 0.0027944999999999997,
+                "total_tokens": 1863,
+                "total_time": 4.157156229019165
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.2034285000000001,
+            "total_tokens": 135619,
+            "total_time": 410.17840933799744
+        },
+        "llama_predicted_answer": "yes, microsoft office 2019 is available in a greater number of languages than microsoft office 2013. microsoft office 2019 is available in 39 languages, while microsoft office 2013 is available in 39 languages. microsoft office 2019 is available in 39 languages, while microsoft office 2013 is available in 39 languages. microsoft office 2019 is available in 39 languages, while microsoft office 2013 is available in 39 languages. microsoft office",
+        "llama_prediction_time": 5.3667731285095215,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 1.0,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.47069549560546875,
+        "openai_eval_cost": 0.0003975,
+        "carbon_emissions": {
+            "chunking": 4.151701029589535e-06,
+            "embedding": 4.7076733765809094e-05,
+            "faiss_indexing": 1.5791658125705688e-07,
+            "query_embedding": 1.2953809505923442e-07,
+            "retrieval": 4.8269055019479304e-08,
+            "precision_recall_eval": 1.149999483746232e-06,
+            "llama_prediction": 0.00010789631652545088
+        }
+    }
+]

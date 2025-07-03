@@ -1,0 +1,55 @@
+[
+    {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "chunking_strategy": "cluster_semantic_chunk",
+        "chunk_size": 10,
+        "chunking_time": 3.082068681716919,
+        "chunk_emissions": 5.923088755101183e-05,
+        "embedding_emissions": 6.554965988146708e-06,
+        "api_cost": 220.172,
+        "embedding_time": 1.6107757091522217,
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1_score": 0.4615384615384615,
+        "evaluation_time": 1.2745411396026611,
+        "indexing_time": 1.2609100341796875,
+        "query_embedding_time": 0.010613441467285156,
+        "retrieval_time": 1.2720415592193604,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 23.87514328956604,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.032135500000000004,
+        "reranked_precision": 0.3,
+        "reranked_recall": 1.0,
+        "reranked_f1_score": 0.4615384615384615,
+        "reranked_eval_time": 1.3412978649139404,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 1.302910584313226e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.1,
+                "recall": 1.0,
+                "f1": 0.18181818181818182,
+                "total_cost": 0.016983,
+                "total_tokens": 11322,
+                "total_time": 4.519935846328735
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0,
+                "total_cost": 0.0380445,
+                "total_tokens": 25363,
+                "total_time": 5.808289051055908
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.0367155,
+            "total_tokens": 24477,
+            "total_time": 13.051402807235718
+        }
+    }
+]

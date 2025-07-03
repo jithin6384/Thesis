@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "intfloat_e5_base",
+        "chunking_strategy": "paragraph_based_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.0005509853363037109,
+        "chunk_emissions": 2.0962163422688276e-06,
+        "embedding_emissions": 1.361150874790804e-05,
+        "api_cost": 220.172,
+        "embedding_time": 2.009824275970459,
+        "precision": 1.0,
+        "recall": 0.24390243902439024,
+        "f1_score": 0.39215686274509803,
+        "evaluation_time": 1.6549723148345947,
+        "indexing_time": 1.4539456367492676,
+        "query_embedding_time": 0.012612342834472656,
+        "retrieval_time": 1.447838306427002,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 36.10707688331604,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.1078385,
+        "reranked_precision": 1.0,
+        "reranked_recall": 0.24390243902439024,
+        "reranked_f1_score": 0.39215686274509803,
+        "reranked_eval_time": 1.5920798778533936,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 3.7167358230492155e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.2,
+                "recall": 0.6666666666666666,
+                "f1": 0.30769230769230765,
+                "total_cost": 0.068202,
+                "total_tokens": 45468,
+                "total_time": 7.791954517364502
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 1.0,
+                "f1": 0.4615384615384615,
+                "total_cost": 0.08873700000000002,
+                "total_tokens": 59158,
+                "total_time": 7.671725749969482
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.016939499999999996,
+            "total_tokens": 11293,
+            "total_time": 3.042451858520508
+        },
+        "llama_predicted_answer": "(\u2022 the (\u2022 the \u2022 the \u2022 the. the. the. for. (\u2022 (\u2022..... (\u2022 ( the: the: the  the (\u2022 (\u2022 ( ( ( (\u2022 (\u2022 (\u2022 the:\u2022 the: the (\u2022: the:: the: the:\u2022 the:\u2022: the: the \u2022: the:\u2022 the \u2022 \u2022 the \u2022 (\u2022 \u2022 (\u2022 the \u2022 (",
+        "llama_prediction_time": 22.894126653671265,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 0.0,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.5665457248687744,
+        "openai_eval_cost": 0.00041400000000000003,
+        "carbon_emissions": {
+            "chunking": 2.0962163422688276e-06,
+            "embedding": 1.361150874790804e-05,
+            "faiss_indexing": 2.9612194138236852e-08,
+            "query_embedding": 1.6164421700626948e-07,
+            "retrieval": 2.8167561200675903e-08,
+            "precision_recall_eval": 3.7167358230492155e-06,
+            "llama_prediction": 0.0011432730446318932
+        }
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "chunking_strategy": "fixed_size_chunk",
+        "chunk_size": 14,
+        "chunking_time": 0.02119731903076172,
+        "chunk_emissions": 7.460221252467306e-07,
+        "embedding_emissions": 0.0003841924803243855,
+        "api_cost": 220.172,
+        "embedding_time": 38.18585276603699,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "evaluation_time": 1.5503292083740234,
+        "indexing_time": 1.2717094421386719,
+        "query_embedding_time": 0.012373208999633789,
+        "retrieval_time": 1.2576298713684082,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "reranked_precision": 0.07142857142857142,
+        "reranked_recall": 0.14285714285714285,
+        "reranked_f1_score": 0.09523809523809523,
+        "reranked_eval_time": 1.6463243961334229,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.019254,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 3.970091585328484e-06
+    }
+]

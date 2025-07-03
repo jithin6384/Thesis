@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "chunking_strategy": "paragraph_based_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.0005469322204589844,
+        "chunk_emissions": 1.3375719457607598e-06,
+        "embedding_emissions": 3.781083515885115e-06,
+        "api_cost": 220.172,
+        "embedding_time": 1.5019867420196533,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1_score": 0.33333333333333337,
+        "evaluation_time": 1.3732259273529053,
+        "indexing_time": 1.245743751525879,
+        "query_embedding_time": 0.010613441467285156,
+        "retrieval_time": 1.264216661453247,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 28.67343521118164,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.1078385,
+        "reranked_precision": 0.2,
+        "reranked_recall": 1.0,
+        "reranked_f1_score": 0.33333333333333337,
+        "reranked_eval_time": 1.3329439163208008,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 1.421607418200151e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 1.0,
+                "f1": 0.4615384615384615,
+                "total_cost": 0.08538749999999999,
+                "total_tokens": 56925,
+                "total_time": 4.417222023010254
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 1.0,
+                "f1": 0.4615384615384615,
+                "total_cost": 0.07347600000000001,
+                "total_tokens": 48984,
+                "total_time": 4.0234575271606445
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.016939499999999996,
+            "total_tokens": 11293,
+            "total_time": 3.042451858520508
+        },
+        "llama_predicted_answer": "(\u2022 the (\u2022 the \u2022 the \u2022 the. the. the. for. (\u2022 (\u2022..... (\u2022 (\u2022 (.: the  the (\u2022 (\u2022 ( ( ( (\u2022 (\u2022 (\u2022 the:\u2022 the: the (\u2022: the:: the: the:\u2022 the:\u2022: the: the \u2022: the:\u2022 the \u2022 \u2022 the \u2022 (\u2022 \u2022 (\u2022 the \u2022 (",
+        "llama_prediction_time": 22.577144861221313,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 0.1,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.3391900062561035,
+        "openai_eval_cost": 0.0003765,
+        "carbon_emissions": {
+            "chunking": 1.3375719457607598e-06,
+            "embedding": 3.781083515885115e-06,
+            "faiss_indexing": 2.7117494586494228e-08,
+            "query_embedding": 8.112672846955897e-07,
+            "retrieval": 2.735231173639861e-08,
+            "precision_recall_eval": 1.421607418200151e-06,
+            "llama_prediction": 0.0010903847960767907
+        }
+    }
+]

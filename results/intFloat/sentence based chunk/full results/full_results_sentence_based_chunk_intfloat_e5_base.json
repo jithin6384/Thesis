@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "intfloat_e5_base",
+        "chunking_strategy": "sentence_based_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.13997983932495117,
+        "chunk_emissions": 4.277478578070518e-06,
+        "embedding_emissions": 0.0002104661086381257,
+        "api_cost": 220.172,
+        "embedding_time": 6.233407974243164,
+        "precision": 1.0,
+        "recall": 0.0025322866548493288,
+        "f1_score": 0.0050517807527153315,
+        "evaluation_time": 1.491872787475586,
+        "indexing_time": 1.4875051975250244,
+        "query_embedding_time": 0.012543678283691406,
+        "retrieval_time": 1.4496045112609863,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 30.471383810043335,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.0034955,
+        "reranked_precision": 1.0,
+        "reranked_recall": 0.0025322866548493288,
+        "reranked_f1_score": 0.0050517807527153315,
+        "reranked_eval_time": 1.509805679321289,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 6.268917056373127e-07,
+        "pre_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 0.375,
+                "f1": 0.33333333333333326,
+                "total_cost": 0.0022454999999999997,
+                "total_tokens": 1497,
+                "total_time": 4.610399007797241
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.4,
+                "recall": 0.5,
+                "f1": 0.4444444444444445,
+                "total_cost": 0.0026925000000000004,
+                "total_tokens": 1795,
+                "total_time": 5.539069414138794
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.2034285000000001,
+            "total_tokens": 135619,
+            "total_time": 410.17840933799744
+        },
+        "llama_predicted_answer": "yes. office 2019 is available in more languages than office 2013. ^ \"what languages is office available in?\" newer versions office 2019 office 2016 office 2013 which language do you need? office 2019 vs. office 2016, q&a: licensing, requirements, benchmark, multilingual, and beyond | by real network labs | medium open in app sign up sign in write sign up sign in office 2019 vs. office 201",
+        "llama_prediction_time": 5.543138742446899,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 1.0,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.6011419296264648,
+        "openai_eval_cost": 0.00043349999999999997,
+        "carbon_emissions": {
+            "chunking": 4.277478578070518e-06,
+            "embedding": 0.0002104661086381257,
+            "faiss_indexing": 1.6888156655341835e-07,
+            "query_embedding": 8.454421357514414e-07,
+            "retrieval": 4.4520251595290396e-08,
+            "precision_recall_eval": 6.268917056373127e-07,
+            "llama_prediction": 0.00011205240757862502
+        }
+    }
+]

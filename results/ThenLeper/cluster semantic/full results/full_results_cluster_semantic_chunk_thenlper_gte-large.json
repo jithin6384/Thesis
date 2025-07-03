@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "thenlper/gte-large",
+        "chunking_strategy": "cluster_semantic_chunk",
+        "chunk_size": 10,
+        "chunking_time": 30.175973415374756,
+        "chunk_emissions": 0.0012790941435164983,
+        "embedding_emissions": 0.00018321471366605134,
+        "api_cost": 220.172,
+        "embedding_time": 5.134758949279785,
+        "precision": 1.0,
+        "recall": 0.05952380952380952,
+        "f1_score": 0.11235955056179775,
+        "evaluation_time": 1.7060399055480957,
+        "indexing_time": 1.4511692523956299,
+        "query_embedding_time": 0.02290511131286621,
+        "retrieval_time": 1.449939489364624,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 34.964089155197144,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.036175,
+        "reranked_precision": 1.0,
+        "reranked_recall": 0.05952380952380952,
+        "reranked_f1_score": 0.11235955056179775,
+        "reranked_eval_time": 1.7494621276855469,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 8.653484162884242e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 0.25,
+                "f1": 0.2727272727272727,
+                "total_cost": 0.016488,
+                "total_tokens": 10992,
+                "total_time": 5.808672189712524
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 0.25,
+                "f1": 0.2727272727272727,
+                "total_cost": 0.035710499999999985,
+                "total_tokens": 23807,
+                "total_time": 6.140464544296265
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.11248500000000003,
+            "total_tokens": 74990,
+            "total_time": 136.82502341270447
+        },
+        "llama_predicted_answer": "",
+        "llama_prediction_time": 10.221945524215698,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 0.0,
+        "openai_eval_reason": "Empty prediction",
+        "openai_eval_time": 0,
+        "openai_eval_cost": 0,
+        "carbon_emissions": {
+            "chunking": 0.0012790941435164983,
+            "embedding": 0.00018321471366605134,
+            "faiss_indexing": 7.313710423631127e-07,
+            "query_embedding": 9.592594296691073e-07,
+            "retrieval": 1.2828762404446263e-05,
+            "precision_recall_eval": 8.653484162884242e-06,
+            "llama_prediction": 0.00041661702241732184
+        }
+    }
+]

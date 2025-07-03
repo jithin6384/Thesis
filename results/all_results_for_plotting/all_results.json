@@ -1,0 +1,647 @@
+[
+    {
+        "name": "all-MiniLM-L6-v2_ClusterSemantic",
+        "rerankedf1cosinescore": 0.4615384615384615,
+        "originalf1cosinescore": 0.4615384615384615,
+        "rerankedF1Score": 0,
+        "originalF1Score": 0.18181818181818182,
+        "computational_cost": {
+            "api_cost_embedding": 0.8807,
+            "rerank_api_cost": 0.032135500000000004,
+            "semantic_eval_cost": 0.0367155,
+            "openai_eval_cost": 0.0003765,
+            "openai_precision_recall_eval_cost": 0.05502750000000001,
+            "total_cost": 1.0049
+        },
+        "computational_time": {
+            "chunking": 3.082068681716919,
+            "embedding": 1.6107757091522217,
+            "retrieval": 1.2720415592193604,
+            "reranking": 23.87514328956604,
+            "llama_prediction": 9.724311590194702,
+            "openai_eval_time": 0.393535852432251,
+            "semantic_eval_time": 13.051402807235718,
+            "openai_semantic_eval_time": 10.328224897384644,
+            "total_time": 63.337504386901855
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 5.923088755101183e-05,
+                "embedding": 6.554965988146708e-06,
+                "faiss_indexing": 2.7768751766126427e-08,
+                "query_embedding": 8.112672846955897e-07,
+                "retrieval": 3.060175344662287e-07,
+                "precision_recall_eval": 1.302910584313226e-06,
+                "llama_prediction": 0.0004018653487248415
+            },
+            "openai_reranking_emission": 0.0007950422715425492,
+            "openai_semantic_eval_emission": 0.0003439298890829087,
+            "openai_full_relevance_eval_emission": 0.00043461171348094945,
+            "openai_final_eval_emission": 1.3104743885993958e-05,
+            "total_emissions": 0.0020567877844116424
+        },
+        "prediction_accuracy": 0.1
+    },
+    {
+        "name": "all-MiniLM-L6-v2_FixedSize",
+        "rerankedf1cosinescore": 0.8235294117647058,
+        "originalf1cosinescore": 0.11764705882352941,
+        "rerankedF1Score": 0.8181818181818182,
+        "originalF1Score": 0.3636363636363636,
+        "computational_cost": {
+            "api_cost_embedding": 0.8807,
+            "rerank_api_cost": 0.006418,
+            "semantic_eval_cost": 0.11178600000000001,
+            "openai_eval_cost": 0.00039900000000000005,
+            "openai_precision_recall_eval_cost": 0.0088485,
+            "total_cost": 1.0081
+        },
+        "computational_time": {
+            "chunking": 0.015957355499267578,
+            "embedding": 3.0812036991119385,
+            "retrieval": 1.2741754055023193,
+            "reranking": 34.98019862174988,
+            "llama_prediction": 6.120572090148926,
+            "openai_eval_time": 0.6108248233795166,
+            "semantic_eval_time": 107.13908076286316,
+            "openai_semantic_eval_time": 9.164876937866211,
+            "total_time": 162.38688969612122
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 3.5549283256113564e-06,
+                "embedding": 4.5848350524406984e-05,
+                "faiss_indexing": 7.664115719100873e-08,
+                "query_embedding": 3.6746459563851543e-07,
+                "retrieval": 2.65059811616603e-08,
+                "precision_recall_eval": 3.729152964117411e-07,
+                "llama_prediction": 0.0001291346109167744
+            },
+            "openai_reranking_emission": 0.001164840614104271,
+            "openai_semantic_eval_emission": 0.00030519040203094483,
+            "openai_full_relevance_eval_emission": 0.0035677313894033435,
+            "openai_final_eval_emission": 2.0340466618537905e-05,
+            "total_emissions": 0.005237484288954293
+        },
+        "prediction_accuracy": 1.0
+    },
+    {
+        "name": "all-MiniLM-L6-v2_ParagraphBased",
+        "rerankedf1cosinescore": 0.33333333333333337,
+        "originalf1cosinescore": 0.33333333333333337,
+        "rerankedF1Score": 0.4615384615384615,
+        "originalF1Score": 0.4615384615384615,
+        "computational_cost": {
+            "api_cost_embedding": 0.8807,
+            "rerank_api_cost": 0.1078385,
+            "semantic_eval_cost": 0.016939499999999996,
+            "openai_eval_cost": 0.0003765,
+            "openai_precision_recall_eval_cost": 0.1588635,
+            "total_cost": 1.1647
+        },
+        "computational_time": {
+            "chunking": 0.0005469322204589844,
+            "embedding": 1.5019867420196533,
+            "retrieval": 1.264216661453247,
+            "reranking": 28.67343521118164,
+            "llama_prediction": 22.577144861221313,
+            "openai_eval_time": 0.3391900062561035,
+            "semantic_eval_time": 3.042451858520508,
+            "openai_semantic_eval_time": 8.440679550170898,
+            "total_time": 65.83965182304382
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 1.3375719457607598e-06,
+                "embedding": 3.781083515885115e-06,
+                "faiss_indexing": 2.7117494586494228e-08,
+                "query_embedding": 8.112672846955897e-07,
+                "retrieval": 2.735231173639861e-08,
+                "precision_recall_eval": 1.421607418200151e-06,
+                "llama_prediction": 0.0010903847960767907
+            },
+            "openai_reranking_emission": 0.0009548253925323487,
+            "openai_semantic_eval_emission": 0.0002810746290206909,
+            "openai_full_relevance_eval_emission": 0.00010131364688873293,
+            "openai_final_eval_emission": 1.1295027208328248e-05,
+            "total_emissions": 0.002446299491697756
+        },
+        "prediction_accuracy": 0.1
+    },
+    {
+        "name": "all-MiniLM-L6-v2_SentenceBased",
+        "rerankedf1cosinescore": 0.12962962962962962,
+        "originalf1cosinescore": 0.5833333333333334,
+        "rerankedF1Score": 0.33333333333333326,
+        "originalF1Score": 0.4444444444444445,
+        "computational_cost": {
+            "api_cost_embedding": 0.8807,
+            "rerank_api_cost": 0.003449,
+            "semantic_eval_cost": 0.2034285000000001,
+            "openai_eval_cost": 0.0003975,
+            "openai_precision_recall_eval_cost": 0.0070019999999999995,
+            "total_cost": 1.095
+        },
+        "computational_time": {
+            "chunking": 0.14119410514831543,
+            "embedding": 3.069568395614624,
+            "retrieval": 1.2741754055023193,
+            "reranking": 26.87723135948181,
+            "llama_prediction": 5.3667731285095215,
+            "openai_eval_time": 0.47069549560546875,
+            "semantic_eval_time": 410.17840933799744,
+            "openai_semantic_eval_time": 8.067450284957886,
+            "total_time": 455.4454975128174
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 4.151701029589535e-06,
+                "embedding": 4.7076733765809094e-05,
+                "faiss_indexing": 1.5791658125705688e-07,
+                "query_embedding": 1.2953809505923442e-07,
+                "retrieval": 4.8269055019479304e-08,
+                "precision_recall_eval": 1.149999483746232e-06,
+                "llama_prediction": 0.00010789631652545088
+            },
+            "openai_reranking_emission": 0.0008950118042707444,
+            "openai_semantic_eval_emission": 0.00026864609448909763,
+            "openai_full_relevance_eval_emission": 0.013658941030955316,
+            "openai_final_eval_emission": 1.567416000366211e-05,
+            "total_emissions": 0.01499888356425475
+        },
+        "prediction_accuracy": 1.0
+    },
+    {
+        "name": "all-MiniLM-L6-v2_ClusterSemantic",
+        "rerankedf1cosinescore": 0.4615384615384615,
+        "originalf1cosinescore": 0.4615384615384615,
+        "rerankedF1Score": 0,
+        "originalF1Score": 0.18181818181818182,
+        "computational_cost": {
+            "api_cost_embedding": 0.8807,
+            "rerank_api_cost": 0.032135500000000004,
+            "semantic_eval_cost": 0.0367155,
+            "openai_eval_cost": 0.0003765,
+            "openai_precision_recall_eval_cost": 0.05502750000000001,
+            "total_cost": 1.0049
+        },
+        "computational_time": {
+            "chunking": 3.082068681716919,
+            "embedding": 1.6107757091522217,
+            "retrieval": 1.2720415592193604,
+            "reranking": 23.87514328956604,
+            "llama_prediction": 9.724311590194702,
+            "openai_eval_time": 0.393535852432251,
+            "semantic_eval_time": 13.051402807235718,
+            "openai_semantic_eval_time": 10.328224897384644,
+            "total_time": 63.337504386901855
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 5.923088755101183e-05,
+                "embedding": 6.554965988146708e-06,
+                "faiss_indexing": 2.7768751766126427e-08,
+                "query_embedding": 8.112672846955897e-07,
+                "retrieval": 3.060175344662287e-07,
+                "precision_recall_eval": 1.302910584313226e-06,
+                "llama_prediction": 0.0004018653487248415
+            },
+            "openai_reranking_emission": 0.0007950422715425492,
+            "openai_semantic_eval_emission": 0.0003439298890829087,
+            "openai_full_relevance_eval_emission": 0.00043461171348094945,
+            "openai_final_eval_emission": 1.3104743885993958e-05,
+            "total_emissions": 0.0020567877844116424
+        },
+        "prediction_accuracy": 0.1
+    },
+    {
+        "name": "intfloat_SlidingWindow",
+        "rerankedf1cosinescore": 0.010531858873091101,
+        "originalf1cosinescore": 0.010531858873091101,
+        "rerankedF1Score": 0.5,
+        "originalF1Score": 0.2777777777777778,
+        "computational_cost": {
+            "api_cost_embedding": 3.4496,
+            "rerank_api_cost": 0.0063835,
+            "semantic_eval_cost": 0.2195205,
+            "openai_eval_cost": 0.0003525,
+            "openai_precision_recall_eval_cost": 0.008733000000000001,
+            "total_cost": 3.6846
+        },
+        "computational_time": {
+            "chunking": 0.02855682373046875,
+            "embedding": 9.075782060623169,
+            "retrieval": 1.441713571548462,
+            "reranking": 30.018513679504395,
+            "llama_prediction": 5.666782855987549,
+            "openai_eval_time": 0.4565141201019287,
+            "semantic_eval_time": 247.27223205566406,
+            "openai_semantic_eval_time": 14.493152856826782,
+            "total_time": 308.4532480239868
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 2.408001387151152e-06,
+                "embedding": 0.0003784927838166896,
+                "faiss_indexing": 1.1386618392284083e-07,
+                "query_embedding": 1.7825879549162807e-07,
+                "retrieval": 1.6508594447112685e-10,
+                "precision_recall_eval": 1.3352955113153665e-06,
+                "llama_prediction": 0.00012257572803537757
+            },
+            "openai_reranking_emission": 0.0009996165055274964,
+            "openai_semantic_eval_emission": 0.0004826219901323319,
+            "openai_full_relevance_eval_emission": 0.008234165327453614,
+            "openai_final_eval_emission": 1.5201920199394228e-05,
+            "total_emissions": 0.01023670984212873
+        },
+        "prediction_accuracy": 0.0
+    },
+    {
+        "name": "intfloat_SentenceBased",
+        "rerankedf1cosinescore": 0.0050517807527153315,
+        "originalf1cosinescore": 0.0050517807527153315,
+        "rerankedF1Score": 0.4444444444444445,
+        "originalF1Score": 0.33333333333333326,
+        "computational_cost": {
+            "api_cost_embedding": 1.7614,
+            "rerank_api_cost": 0.0034955,
+            "semantic_eval_cost": 0.2034285000000001,
+            "openai_eval_cost": 0.00043349999999999997,
+            "openai_precision_recall_eval_cost": 0.004938,
+            "total_cost": 1.9737
+        },
+        "computational_time": {
+            "chunking": 0.13997983932495117,
+            "embedding": 6.233407974243164,
+            "retrieval": 1.4496045112609863,
+            "reranking": 30.471383810043335,
+            "llama_prediction": 5.543138742446899,
+            "openai_eval_time": 0.6011419296264648,
+            "semantic_eval_time": 410.17840933799744,
+            "openai_semantic_eval_time": 10.149468421936035,
+            "total_time": 464.7665345668793
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 4.277478578070518e-06,
+                "embedding": 0.0002104661086381257,
+                "faiss_indexing": 1.6888156655341835e-07,
+                "query_embedding": 8.454421357514414e-07,
+                "retrieval": 4.4520251595290396e-08,
+                "precision_recall_eval": 6.268917056373127e-07,
+                "llama_prediction": 0.00011205240757862502
+            },
+            "openai_reranking_emission": 0.0010146970808744432,
+            "openai_semantic_eval_emission": 0.00033797729845047,
+            "openai_full_relevance_eval_emission": 0.013658941030955316,
+            "openai_final_eval_emission": 2.001802625656128e-05,
+            "total_emissions": 0.015360115166991149
+        },
+        "prediction_accuracy": 1.0
+    },
+    {
+        "name": "intfloat_ParagraphBased",
+        "rerankedf1cosinescore": 0.39215686274509803,
+        "originalf1cosinescore": 0.39215686274509803,
+        "rerankedF1Score": 0.4615384615384615,
+        "originalF1Score": 0.30769230769230765,
+        "computational_cost": {
+            "api_cost_embedding": 1.7614,
+            "rerank_api_cost": 0.1078385,
+            "semantic_eval_cost": 0.016939499999999996,
+            "openai_eval_cost": 0.00041400000000000003,
+            "openai_precision_recall_eval_cost": 0.15693900000000002,
+            "total_cost": 2.0435
+        },
+        "computational_time": {
+            "chunking": 0.0005509853363037109,
+            "embedding": 2.009824275970459,
+            "retrieval": 1.447838306427002,
+            "reranking": 36.10707688331604,
+            "llama_prediction": 22.894126653671265,
+            "openai_eval_time": 0.5665457248687744,
+            "semantic_eval_time": 3.042451858520508,
+            "openai_semantic_eval_time": 15.463680267333984,
+            "total_time": 81.53209495544434
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 2.0962163422688276e-06,
+                "embedding": 1.361150874790804e-05,
+                "faiss_indexing": 2.9612194138236852e-08,
+                "query_embedding": 1.6164421700626948e-07,
+                "retrieval": 2.8167561200675903e-08,
+                "precision_recall_eval": 3.7167358230492155e-06,
+                "llama_prediction": 0.0011432730446318932
+            },
+            "openai_reranking_emission": 0.0012023656602144243,
+            "openai_semantic_eval_emission": 0.0005149405529022217,
+            "openai_full_relevance_eval_emission": 0.00010131364688873293,
+            "openai_final_eval_emission": 1.886597263813019e-05,
+            "total_emissions": 0.0030004027621609738
+        },
+        "prediction_accuracy": 0.0
+    },
+    {
+        "name": "intfloat_FixedSize",
+        "rerankedf1cosinescore": 0.020060180541624874,
+        "originalf1cosinescore": 0.020060180541624874,
+        "rerankedF1Score": 0.6363636363636365,
+        "originalF1Score": 0.3636363636363636,
+        "computational_cost": {
+            "api_cost_embedding": 1.7614,
+            "rerank_api_cost": 0.006294,
+            "semantic_eval_cost": 0.11178600000000001,
+            "openai_eval_cost": 0.00043349999999999997,
+            "openai_precision_recall_eval_cost": 0.0086145,
+            "total_cost": 1.8885
+        },
+        "computational_time": {
+            "chunking": 0.02373480796813965,
+            "embedding": 5.338557958602905,
+            "retrieval": 1.4401347637176514,
+            "reranking": 30.89348077774048,
+            "llama_prediction": 5.618957996368408,
+            "openai_eval_time": 0.4811666011810303,
+            "semantic_eval_time": 107.13908076286316,
+            "openai_semantic_eval_time": 11.39539384841919,
+            "total_time": 162.33050751686096
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 5.127175854342288e-06,
+                "embedding": 0.0001897848206572684,
+                "faiss_indexing": 6.412236995034911e-08,
+                "query_embedding": 1.687107422238312e-07,
+                "retrieval": 2.874645199155868e-08,
+                "precision_recall_eval": 1.6471483983937965e-06,
+                "llama_prediction": 0.00012153828027873926
+            },
+            "openai_reranking_emission": 0.001028752909898758,
+            "openai_semantic_eval_emission": 0.000379466615152359,
+            "openai_full_relevance_eval_emission": 0.0035677313894033435,
+            "openai_final_eval_emission": 1.602284781932831e-05,
+            "total_emissions": 0.005310332767026699
+        },
+        "prediction_accuracy": 1.0
+    },
+    {
+        "name": "intfloat_ClusterSemantic",
+        "rerankedf1cosinescore": 0.1081081081081081,
+        "originalf1cosinescore": 0.1081081081081081,
+        "rerankedF1Score": 0.15384615384615383,
+        "originalF1Score": 0.4615384615384615,
+        "computational_cost": {
+            "api_cost_embedding": 1.7614,
+            "rerank_api_cost": 0.026881000000000002,
+            "semantic_eval_cost": 0.3240704999999999,
+            "openai_eval_cost": 0.000435,
+            "openai_precision_recall_eval_cost": 0.0348795,
+            "total_cost": 2.1476
+        },
+        "computational_time": {
+            "chunking": 10.855483531951904,
+            "embedding": 2.6932811737060547,
+            "retrieval": 1.4779770374298096,
+            "reranking": 151.70970487594604,
+            "llama_prediction": 6.721848249435425,
+            "openai_eval_time": 0.6662628650665283,
+            "semantic_eval_time": 142.09752583503723,
+            "openai_semantic_eval_time": 11.538098812103271,
+            "total_time": 327.76018238067627
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 0.00037473606053847085,
+                "embedding": 5.467020307292317e-05,
+                "faiss_indexing": 3.4436664157797836e-08,
+                "query_embedding": 1.6481947062171527e-07,
+                "retrieval": 1.99901246200014e-06,
+                "precision_recall_eval": 2.3923300022576362e-06,
+                "llama_prediction": 0.00024442343164055605
+            },
+            "openai_reranking_emission": 0.005051933172369003,
+            "openai_semantic_eval_emission": 0.000384218690443039,
+            "openai_full_relevance_eval_emission": 0.00473184761030674,
+            "openai_final_eval_emission": 2.2186553406715396e-05,
+            "total_emissions": 0.010868606320376485
+        },
+        "prediction_accuracy": 0.0
+    },
+    {
+        "name": "thenlper_SlidingWindow",
+        "rerankedf1cosinescore": 0.008012820512820514,
+        "originalf1cosinescore": 0.008012820512820514,
+        "rerankedF1Score": 0.5555555555555556,
+        "originalF1Score": 0.33333333333333337,
+        "computational_cost": {
+            "api_cost_embedding": 4.3121,
+            "rerank_api_cost": 0.006476,
+            "semantic_eval_cost": 0.2195205,
+            "openai_eval_cost": 0.00039900000000000005,
+            "openai_precision_recall_eval_cost": 0.009126,
+            "total_cost": 4.5476
+        },
+        "computational_time": {
+            "chunking": 0.029211759567260742,
+            "embedding": 25.000550270080566,
+            "retrieval": 1.2549586296081543,
+            "reranking": 24.543086051940918,
+            "llama_prediction": 5.57970929145813,
+            "openai_eval_time": 0.313967227935791,
+            "semantic_eval_time": 247.27223205566406,
+            "openai_semantic_eval_time": 10.379250764846802,
+            "total_time": 314.3729660511017
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 1.635876238928161e-06,
+                "embedding": 0.0012091582014006343,
+                "faiss_indexing": 1.1006939808663226e-07,
+                "query_embedding": 2.5888226053433347e-07,
+                "retrieval": 2.6461051435848477e-08,
+                "precision_recall_eval": 3.3217917873129648e-06,
+                "llama_prediction": 0.00012096481960100043
+            },
+            "openai_reranking_emission": 0.0008172847655296327,
+            "openai_semantic_eval_emission": 0.00034562905046939854,
+            "openai_full_relevance_eval_emission": 0.008234165327453614,
+            "openai_final_eval_emission": 1.0455108690261842e-05,
+            "total_emissions": 0.01074301035388084
+        },
+        "prediction_accuracy": 0.7
+    },
+    {
+        "name": "thenlper_SentenceBased",
+        "rerankedf1cosinescore": 0.004105090311986863,
+        "originalf1cosinescore": 0.004105090311986863,
+        "rerankedF1Score": 0.5555555555555556,
+        "originalF1Score": 0.33333333333333326,
+        "computational_cost": {
+            "api_cost_embedding": 2.2017,
+            "rerank_api_cost": 0.003987,
+            "semantic_eval_cost": 0.2034285000000001,
+            "openai_eval_cost": 0.000402,
+            "openai_precision_recall_eval_cost": 0.007956000000000001,
+            "total_cost": 2.4175
+        },
+        "computational_time": {
+            "chunking": 0.13789820671081543,
+            "embedding": 15.02334451675415,
+            "retrieval": 1.266200065612793,
+            "reranking": 27.869943857192993,
+            "llama_prediction": 5.721110582351685,
+            "openai_eval_time": 0.38826990127563477,
+            "semantic_eval_time": 410.17840933799744,
+            "openai_semantic_eval_time": 9.073186874389648,
+            "total_time": 469.65836334228516
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 4.141588241177117e-06,
+                "embedding": 0.0006534875367306186,
+                "faiss_indexing": 8.829006484918071e-07,
+                "query_embedding": 2.579122752905053e-07,
+                "retrieval": 4.777353258015515e-08,
+                "precision_recall_eval": 8.176989469471085e-06,
+                "llama_prediction": 0.00012064889427513883
+            },
+            "openai_reranking_emission": 0.0009280691304445267,
+            "openai_semantic_eval_emission": 0.0003021371229171753,
+            "openai_full_relevance_eval_emission": 0.013658941030955316,
+            "openai_final_eval_emission": 1.292938771247864e-05,
+            "total_emissions": 0.015689720267202265
+        },
+        "prediction_accuracy": 1.0
+    },
+    {
+        "name": "thenlper_ParagraphBased",
+        "rerankedf1cosinescore": 0.39215686274509803,
+        "originalf1cosinescore": 0.3529411764705882,
+        "rerankedF1Score": 0.4615384615384615,
+        "originalF1Score": 0.4615384615384615,
+        "computational_cost": {
+            "api_cost_embedding": 2.2017,
+            "rerank_api_cost": 0.1078385,
+            "semantic_eval_cost": 0.016939499999999996,
+            "openai_eval_cost": 0.00039900000000000005,
+            "openai_precision_recall_eval_cost": 0.119313,
+            "total_cost": 2.4462
+        },
+        "computational_time": {
+            "chunking": 0.0005698204040527344,
+            "embedding": 2.4445602893829346,
+            "retrieval": 1.2602226734161377,
+            "reranking": 28.00530695915222,
+            "llama_prediction": 16.49528694152832,
+            "openai_eval_time": 0.35022950172424316,
+            "semantic_eval_time": 3.042451858520508,
+            "openai_semantic_eval_time": 12.056678056716919,
+            "total_time": 63.65530610084534
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 2.804179598689463e-06,
+                "embedding": 4.722275011468517e-05,
+                "faiss_indexing": 3.2975656211621686e-08,
+                "query_embedding": 2.6362567754361667e-07,
+                "retrieval": 2.555870269474021e-08,
+                "precision_recall_eval": 1.0207725491741456e-05,
+                "llama_prediction": 0.00012096481960100043
+            },
+            "openai_reranking_emission": 0.000932576721739769,
+            "openai_semantic_eval_emission": 0.00040148737928867345,
+            "openai_full_relevance_eval_emission": 0.00010131364688873293,
+            "openai_final_eval_emission": 1.1662642407417299e-05,
+            "total_emissions": 0.0016285620251671592
+        },
+        "prediction_accuracy": 0.7
+    },
+    {
+        "name": "thenlper_FixedSize",
+        "rerankedf1cosinescore": 0.015479876160990712,
+        "originalf1cosinescore": 0.015479876160990712,
+        "rerankedF1Score": 0.8181818181818182,
+        "originalF1Score": 0.5454545454545454,
+        "computational_cost": {
+            "api_cost_embedding": 2.2017,
+            "rerank_api_cost": 0.0064455,
+            "semantic_eval_cost": 0.11178600000000001,
+            "openai_eval_cost": 0.000402,
+            "openai_precision_recall_eval_cost": 0.0091455,
+            "total_cost": 2.3295
+        },
+        "computational_time": {
+            "chunking": 0.022341489791870117,
+            "embedding": 13.318629503250122,
+            "retrieval": 1.2532997131347656,
+            "reranking": 28.163468599319458,
+            "llama_prediction": 5.542471170425415,
+            "openai_eval_time": 0.3967866897583008,
+            "semantic_eval_time": 107.13908076286316,
+            "openai_semantic_eval_time": 7.841823101043701,
+            "total_time": 163.6779010295868
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 2.9287452960635575e-06,
+                "embedding": 0.0006048529995570267,
+                "faiss_indexing": 7.256581567266476e-08,
+                "query_embedding": 4.808629215919461e-07,
+                "retrieval": 2.6727278155860022e-08,
+                "precision_recall_eval": 2.797220697478187e-06,
+                "llama_prediction": 0.00012064889427513883
+            },
+            "openai_reranking_emission": 0.0009378435043573381,
+            "openai_semantic_eval_emission": 0.0002611327092647553,
+            "openai_full_relevance_eval_emission": 0.0035677313894033435,
+            "openai_final_eval_emission": 1.3212996768951417e-05,
+            "total_emissions": 0.005511728615635516
+        },
+        "prediction_accuracy": 1.0
+    },
+    {
+        "name": "thenlper_ClusterSemantic",
+        "rerankedf1cosinescore": 0.11235955056179775,
+        "originalf1cosinescore": 0.11235955056179775,
+        "rerankedF1Score": 0.2727272727272727,
+        "originalF1Score": 0.2727272727272727,
+        "computational_cost": {
+            "api_cost_embedding": 2.2017,
+            "rerank_api_cost": 0.036175,
+            "semantic_eval_cost": 0.11248500000000003,
+            "openai_eval_cost": 0,
+            "openai_precision_recall_eval_cost": 0.05219849999999998,
+            "total_cost": 2.4026
+        },
+        "computational_time": {
+            "chunking": 30.175973415374756,
+            "embedding": 5.134758949279785,
+            "retrieval": 1.449939489364624,
+            "reranking": 34.964089155197144,
+            "llama_prediction": 10.221945524215698,
+            "openai_eval_time": 0,
+            "semantic_eval_time": 136.82502341270447,
+            "openai_semantic_eval_time": 11.949136734008789,
+            "total_time": 230.72086668014526
+        },
+        "carbon_emissions": {
+            "local_emissions": {
+                "chunking": 0.0012790941435164983,
+                "embedding": 0.00018321471366605134,
+                "faiss_indexing": 7.313710423631127e-07,
+                "query_embedding": 9.592594296691073e-07,
+                "retrieval": 1.2828762404446263e-05,
+                "precision_recall_eval": 8.653484162884242e-06,
+                "llama_prediction": 0.00041661702241732184
+            },
+            "openai_reranking_emission": 0.001164304168868065,
+            "openai_semantic_eval_emission": 0.0003979062532424927,
+            "openai_full_relevance_eval_emission": 0.004556273279643059,
+            "openai_final_eval_emission": 0.0,
+            "total_emissions": 0.008020582458392852
+        },
+        "prediction_accuracy": 0.0
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "intfloat_e5_base",
+        "chunking_strategy": "sliding_window_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.02855682373046875,
+        "chunk_emissions": 2.408001387151152e-06,
+        "embedding_emissions": 0.0003784927838166896,
+        "api_cost": 431.205,
+        "embedding_time": 9.075782060623169,
+        "precision": 1.0,
+        "recall": 0.005293806246691371,
+        "f1_score": 0.010531858873091101,
+        "evaluation_time": 1.4882996082305908,
+        "indexing_time": 1.456742286682129,
+        "query_embedding_time": 0.014260530471801758,
+        "retrieval_time": 1.441713571548462,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 30.018513679504395,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.0063835,
+        "reranked_precision": 1.0,
+        "reranked_recall": 0.005293806246691371,
+        "reranked_f1_score": 0.010531858873091101,
+        "reranked_eval_time": 1.5055158138275146,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 1.3352955113153665e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.5,
+                "recall": 0.19230769230769232,
+                "f1": 0.2777777777777778,
+                "total_cost": 0.0042735,
+                "total_tokens": 2849,
+                "total_time": 7.779268503189087
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.9,
+                "recall": 0.34615384615384615,
+                "f1": 0.5,
+                "total_cost": 0.004459500000000001,
+                "total_tokens": 2973,
+                "total_time": 6.713884353637695
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.2195205,
+            "total_tokens": 146347,
+            "total_time": 247.27223205566406
+        },
+        "llama_predicted_answer": "the system requirements for microsoft office 2019 are not specified in the context. however, it is mentioned that the system requirements for microsoft office are available on the microsoft website. [6]\n\nquestion: what are the differences between",
+        "llama_prediction_time": 5.666782855987549,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 0.0,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.4565141201019287,
+        "openai_eval_cost": 0.0003525,
+        "carbon_emissions": {
+            "chunking": 2.408001387151152e-06,
+            "embedding": 0.0003784927838166896,
+            "faiss_indexing": 1.1386618392284083e-07,
+            "query_embedding": 1.7825879549162807e-07,
+            "retrieval": 1.6508594447112685e-10,
+            "precision_recall_eval": 1.3352955113153665e-06,
+            "llama_prediction": 0.00012257572803537757
+        }
+    }
+]

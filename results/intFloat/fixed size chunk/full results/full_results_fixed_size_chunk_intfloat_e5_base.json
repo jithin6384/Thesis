@@ -1,0 +1,71 @@
+[
+    {
+        "embedding_model": "intfloat_e5_base",
+        "chunking_strategy": "fixed_size_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.02373480796813965,
+        "chunk_emissions": 5.127175854342288e-06,
+        "embedding_emissions": 0.0001897848206572684,
+        "api_cost": 220.172,
+        "embedding_time": 5.338557958602905,
+        "precision": 1.0,
+        "recall": 0.010131712259371834,
+        "f1_score": 0.020060180541624874,
+        "evaluation_time": 1.4870591163635254,
+        "indexing_time": 1.4427235126495361,
+        "query_embedding_time": 0.0132293701171875,
+        "retrieval_time": 1.4401347637176514,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 30.89348077774048,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.006294,
+        "reranked_precision": 1.0,
+        "reranked_recall": 0.010131712259371834,
+        "reranked_f1_score": 0.020060180541624874,
+        "reranked_eval_time": 1.49086594581604,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 1.6471483983937965e-06,
+        "pre_reanked_details": [
+            {
+                "precision": 0.4,
+                "recall": 0.3333333333333333,
+                "f1": 0.3636363636363636,
+                "total_cost": 0.0042465,
+                "total_tokens": 2831,
+                "total_time": 5.844167470932007
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.7,
+                "recall": 0.5833333333333334,
+                "f1": 0.6363636363636365,
+                "total_cost": 0.0043679999999999995,
+                "total_tokens": 2912,
+                "total_time": 5.551226377487183
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.11178600000000001,
+            "total_tokens": 74524,
+            "total_time": 107.13908076286316
+        },
+        "llama_predicted_answer": "yes, microsoft office 2019 is available in 102 languages, whereas microsoft office 2013 is available in 40 languages. [5] [1]\n\n## references\n\n[1] microsoft office 2019 - wikipedia\n[2] microsoft office 2019 - microsoft support\n[3] microsoft office 2019 - real network labs\n[4] microsoft office 2019 - language accessory pack\n[5] microsoft office 2019 - wikipedia\n[6]",
+        "llama_prediction_time": 5.618957996368408,
+        "llama_used_locally": true,
+        "openai_eval_accuracy": 1.0,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.4811666011810303,
+        "openai_eval_cost": 0.00043349999999999997,
+        "carbon_emissions": {
+            "chunking": 5.127175854342288e-06,
+            "embedding": 0.0001897848206572684,
+            "faiss_indexing": 6.412236995034911e-08,
+            "query_embedding": 1.687107422238312e-07,
+            "retrieval": 2.874645199155868e-08,
+            "precision_recall_eval": 1.6471483983937965e-06,
+            "llama_prediction": 0.00012153828027873926
+        }
+    }
+]

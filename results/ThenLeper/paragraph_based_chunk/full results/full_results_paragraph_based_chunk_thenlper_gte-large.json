@@ -1,0 +1,69 @@
+[
+    {
+        "embedding_model": "thenlper/gte-large",
+        "chunking_strategy": "paragraph_based_chunk",
+        "chunk_size": 10,
+        "chunking_time": 0.0005698204040527344,
+        "chunk_emissions": 2.804179598689463e-06,
+        "embedding_emissions": 4.722275011468517e-05,
+        "api_cost": 220.172,
+        "embedding_time": 2.4445602893829346,
+        "precision": 1.0,
+        "recall": 0.24390243902439024,
+        "f1_score": 0.39215686274509803,
+        "evaluation_time": 1.6305079460144043,
+        "indexing_time": 1.2706046104431152,
+        "query_embedding_time": 0.02293848991394043,
+        "retrieval_time": 1.2602226734161377,
+        "similarity_threshold": 0.7,
+        "reranked_with_openAI": true,
+        "rerank_time": 28.00530695915222,
+        "rerank_api_calls": 50,
+        "rerank_cost": 0.1078385,
+        "reranked_precision": 0.9,
+        "llama_prediction_time": 16.49528694152832,
+        "reranked_recall": 0.21951219512195122,
+        "reranked_f1_score": 0.3529411764705882,
+        "reranked_eval_time": 1.6032495498657227,
+        "similarity_threshold_rerank": 0.7,
+        "reranked_emissions": 1.0207725491741456e-05,
+        "pre_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 1.0,
+                "f1": 0.4615384615384615,
+                "total_cost": 0.030576,
+                "total_tokens": 20384,
+                "total_time": 7.040953874588013
+            }
+        ],
+        "post_reanked_details": [
+            {
+                "precision": 0.3,
+                "recall": 1.0,
+                "f1": 0.4615384615384615,
+                "total_cost": 0.08873700000000001,
+                "total_tokens": 59158,
+                "total_time": 5.015724182128906
+            }
+        ],
+        "full_data_relevance_details": {
+            "total_cost": 0.016939499999999996,
+            "total_tokens": 11293,
+            "total_time": 3.042451858520508
+        },
+        "openai_eval_accuracy": 0.7,
+        "openai_eval_reason": "Evaluated by OpenAI",
+        "openai_eval_time": 0.35022950172424316,
+        "openai_eval_cost": 0.00039900000000000005,
+        "carbon_emissions": {
+            "chunking": 2.804179598689463e-06,
+            "embedding": 4.722275011468517e-05,
+            "faiss_indexing": 3.2975656211621686e-08,
+            "query_embedding": 2.6362567754361667e-07,
+            "retrieval": 2.555870269474021e-08,
+            "precision_recall_eval": 1.0207725491741456e-05,
+            "llama_prediction": 0.00012096481960100043
+        }
+    }
+]
